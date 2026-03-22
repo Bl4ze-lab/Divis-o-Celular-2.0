@@ -19,13 +19,13 @@ body{
 
 .hidden{display:none;}
 
-.container{width:100%;max-width:600px;}
+.container{width:700px; height: 700px;}
 
 .box{
   background:#0e1425;
   padding:20px;
-  border-radius:15px;
-  box-shadow:0 0 20px #0400ff;
+  border-radius:20px;
+  box-shadow:0 0 20px #1634db;
 }
 
 button{
@@ -69,7 +69,7 @@ img{
 .progresso{
   height:100%;
   width:0%;
-  background:#24dd1e;
+  background:#00ff00;
 }
 
 
@@ -98,7 +98,7 @@ img{
   <h1>🧬 Divisão Celular</h1>
   <button onclick="iniciar()">▶️ Jogar</button>
   <p id="ultimo"></p>
-  <h3>By:Enzo (Bl4ze)</h3>
+  <h3>By: Dev Enzo (Bl4ze)</h3>
 </div>
 
 
@@ -141,16 +141,16 @@ img{
 <script>
 
 let perguntas=[
-{q:"1. Durante o ciclo celular, em qual subfase da interfase ocorre a replicação (duplicação) do DNA?",r:["Fase G1","Fase S","Fase G2"],c:1,img:"img2/pergunta 1.webp"},
-{q:"2. Na Mitose, qual é a fase caracterizada pelo alinhamento dos cromossomos na placa equatorial da célula?",r:["Metáfase","Anáfase","Profáse"],c:0,img:"img2/pergunta 2.jpg"},
-{q:"3. O que ocorre especificamente durante a Anáfase da Mitose?",r:["separação das cromátides irmãs","Descondensação dos cromossomos","pareamento de cromossomos homnológicos"],c:0,img:"img2/pergunta 3.jpg"},
-{q:"4. A Citocinese é o processo que finaliza a divisão celular. Qual a sua principal função?",r:["Dividir o Citoplasma e as Organelas","Dividir o núcleo em dois","Duplicar as Mitocôdrias"],c:0,img:"img2/pergunta 4.jpg"},
-{q:"5. O 'Crossing-over' é um evento fundamental para a variabilidade genética. Em qual fase da Meiose ele ocorre?",r:["Prófase I","Prófase II","Metáfase II"],c:0,img:"img2/pergunta 5.jpg"},
-{q:"6. Qual é a principal diferença entre a Anáfase I e a Anáfase II da Meiose?",r:["Na I separam-se homólogos; na II separam-se cromátides irmãs","Não há diferença, ambas separam cromátides irmãs","Na I separam-se cromátides irmãs; na II separam-se homólogos"],c:0,img:"img2/pergunta 6.jpg"},
-{q:"7. Na Metáfase II da Meiose, como os cromossomos se organizam na placa equatorial?",r:["individualmente, um sobre o outro","Em pares do Homólogo","ligadas apenas por um polo do fuso"],c:0,img:"img2/pergunta 7.jpg"},
-{q:"8. Considerando a Interfase, o que caracteriza a fase G2?",r:["Crescimento final e síntese de proteínas para a divisão","A célula para de crescer definitivamente","Ocorre a separação do citoplasma"],c:0,img:"img2/pergunta 8.jpg"},
-{q:"9. Na Meiose, a Telófase I resulta em quantas células e com qual ploidia (em relação à original)?",r:["Duas células haploides (n)","Quatro células haploides (n)","Duas células diploides (2n)"],c:0,img:"img2/pergunta 9.jpg"},
-{q:"10. Ao final de todo o processo de Meiose (I e II), qual é o saldo final de células produzidas a partir de uma célula-mãe diploide?",r:["Quatro células filhas geneticamente diferentes e haploides","Quatro células filhas diploides e clones entre si","Quatro células filhas geneticamente idênticas à mãe"],c:0,img:"img2/pergunta 10.png"}
+{q:"1. Durante o ciclo celular, em qual subfase da interfase ocorre a replicação (duplicação) do DNA?",r:["Fase G1","Fase S","Fase G2"],c:1,img:"pergunta 1.webp"},
+{q:"2. Na Mitose, qual é a fase caracterizada pelo alinhamento dos cromossomos na placa equatorial da célula?",r:["Metáfase","Anáfase","Profáse"],c:0,img:"pergunta 2.jpg"},
+{q:"3. O que ocorre especificamente durante a Anáfase da Mitose?",r:["separação das cromátides irmãs","Descondensação dos cromossomos","pareamento de cromossomos homnológicos"],c:0,img:"pergunta 3.jpg"},
+{q:"4. A Citocinese é o processo que finaliza a divisão celular. Qual a sua principal função?",r:["Dividir o Citoplasma e as Organelas","Dividir o núcleo em dois","Duplicar as Mitocôdrias"],c:0,img:"pergunta 4.jpg"},
+{q:"5. O 'Crossing-over' é um evento fundamental para a variabilidade genética. Em qual fase da Meiose ele ocorre?",r:["Prófase I","Prófase II","Metáfase II"],c:0,img:"pergunta 5.jpg"},
+{q:"6. Qual é a principal diferença entre a Anáfase I e a Anáfase II da Meiose?",r:["Na I separam-se homólogos; na II separam-se cromátides irmãs","Não há diferença, ambas separam cromátides irmãs","Na I separam-se cromátides irmãs; na II separam-se homólogos"],c:0,img:"pergunta 6.jpg"},
+{q:"7. Na Metáfase II da Meiose, como os cromossomos se organizam na placa equatorial?",r:["individualmente, um sobre o outro","Em pares do Homólogo","ligadas apenas por um polo do fuso"],c:0,img:"pergunta 7.jpg"},
+{q:"8. Considerando a Interfase, o que caracteriza a fase G2?",r:["Crescimento final e síntese de proteínas para a divisão","A célula para de crescer definitivamente","Ocorre a separação do citoplasma"],c:0,img:"pergunta 8.jpg"},
+{q:"9. Na Meiose, a Telófase I resulta em quantas células e com qual ploidia (em relação à original)?",r:["Duas células haploides (n)","Quatro células haploides (n)","Duas células diploides (2n)"],c:0,img:"pergunta 9.jpg"},
+{q:"10. Ao final de todo o processo de Meiose (I e II), qual é o saldo final de células produzidas a partir de uma célula-mãe diploide?",r:["Quatro células filhas geneticamente diferentes e haploides","Quatro células filhas diploides e clones entre si","Quatro células filhas geneticamente idênticas à mãe"],c:0,img:"pergunta 10.png"}
 ];
 
 let i=0, acertos=0;
@@ -237,9 +237,9 @@ function finalizar(){
 
   let p=(acertos/perguntas.length)*100;
   rankFinal.innerText=
-    p===100?"🏆 S":
-    p>=70?"🥇 A":
-    p>=50?"🥈 B":"🥉 C";
+    p===100?"Meus párabens você acertou todas e tirou 🏆 S":
+    p>=70?"Quase hein, acertou quase todas e tirou🥇 A":
+    p>=50?"Estuda mais um pouco, você tirou 🥈 B":"Você é BURRO? tirou 🥉 C";
 }
 
 function reiniciarJogo(){
